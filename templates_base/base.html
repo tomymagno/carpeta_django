@@ -6,21 +6,10 @@
     <title>Sistema coder 55350</title>
 </head>
 <body>
-    <h1>Hola , les saluda {{profesor}}<h1>
+    <h1>
+        Bienvenidos a la plataforma de Coderhouse.
+    <h1>
     
-    <h3>Alumnos inscritos:</h3>
-    <ul>
-    {% for estudiante in estudiantes %}
-        <li>
-            {{ estudiante.apellido }}, {{ estudiante.nombre }}
-            {% if estudiante.nota >= 5 %}
-            APROBADO
-            {% else %}
-            REPROBADO
-            {% endif %}
-        </li>
-    {% endfor %}
-    </ul>
     
 </body>
 </html>

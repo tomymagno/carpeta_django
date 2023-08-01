@@ -22,19 +22,3 @@ def saludar_con_html(request):
         )
         return http_response
 
-def listar_estudiantes(request):
-    contexto = {
-        "profesor": "Pedro",
-        "estudiantes": [
-            {"nombre": "Emanuel", "apellido": "Dautel", "nota": 10},
-            {"nombre": "Manuela", "apellido": "Gomez", "nota": 4},
-            {"nombre": "Ivan", "apellido": "Tomasevich", "nota": 6},
-            {"nombre": "Carlos", "apellido": "Perez", "nota": 1}
-        ]
-    }
-    HttpResponse = render(
-        request=request,
-        template_name='base.html',
-        context=contexto,
-    )
-    return HttpResponse
