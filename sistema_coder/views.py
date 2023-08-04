@@ -9,7 +9,7 @@ def saludar(request):
     pagina_html = HttpResponse(saludo)
     return pagina_html
 
-def saludar_con_html(request):
+def inicio(request):
         contexto={
             "profesor": "Pedro",
             "tutores": ["Mariano", "Ariel"],
@@ -17,7 +17,7 @@ def saludar_con_html(request):
         }
         http_response = render(
         request=request,
-        template_name="base.html",
+        template_name="inicio.html",
         context=contexto,
         )
         return http_response
